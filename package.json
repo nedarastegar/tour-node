@@ -1,0 +1,22 @@
+{
+  "name": "tour-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon node main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "auto-bind": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "http-errors": "^2.0.0",
+    "mongoose": "^8.5.2",
+    "nodemon": "^3.1.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
