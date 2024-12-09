@@ -24,14 +24,14 @@
  */
 /**
  * @swagger
- * /booking/create:
+ * /booking/book/{tourId}:
  *  post:
  *      summary: reserve
  *      tags:
  *          -   Booking
  *      parameters:
  *          -   in: path
- *              name: id
+ *              name: tourId
  *      requestBody:
  *          content:
  *              application/x-www-form-urlencoded:

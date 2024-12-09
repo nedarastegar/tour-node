@@ -18,7 +18,7 @@ class TourService{
     }
     async create(tourDto) {
     await this.checkExistByname(tourDto.nameTour);
-     await this.checkDate(tourDto.Returndate,tourDto.departureDate);
+    //  await this.checkDate(tourDto.Returndate,tourDto.departureDate);
     const tour = await this.#model.create(tourDto);
         return tour;
     }

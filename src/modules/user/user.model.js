@@ -15,7 +15,7 @@ const UserSchema = new Schema({
     otp: {type:OTPSchema},
     verifiedMobile:{type: Boolean, required:true, default: false },
     accessToken: {type: String},
-    profile:{type: Types.ObjectId,  ref: 'Profile',required: true, },
+    profile:{type: Types.ObjectId,  ref: 'Profile',required: false, },
 },{timestamps: true})
 
 const UserModel = model('user', UserSchema);

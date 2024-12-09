@@ -18,6 +18,7 @@ try {
     // اینجا موبایل رو از ورودی میگیره
 // و برای اینکه بدونیم همچین موبایلی وجود داره یا نه توی سرویس چک میکنیم
     const{mobile} = req.body;
+    
      await this.#service.sendOTP(mobile);
     return res.json({
         message:AuthMessage.SendOTPSuccessfully

@@ -1,12 +1,11 @@
-const { Router } = require("express");
-const BookingContrller = require("./booking.contrller");
+const { Router } = require('express');
+const BookingContrller = require('./booking.contrller');
 const Authorization = require('../../common/guard/authorization.guard');
 
 const router = Router();
-router.post("/book/:tourId", Authorization, BookingContrller.reserve)
-router.get("/find",BookingContrller.find)
-
+router.post('/book/:tourId', Authorization, BookingContrller.reserve);
+router.get('/find', Authorization, BookingContrller.find);
 
 module.exports = {
-    BookingRouter: router
-}
+  BookingRouter: router,
+};
